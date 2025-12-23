@@ -1,0 +1,41 @@
+{
+  "name": "zod-error-map",
+  "version": "0.1.0",
+  "description": "Type-safe, customizable error message mapping for Zod validation",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./src/index.js",
+      "types": "./src/index.d.ts"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "typecheck": "tsc"
+  },
+  "keywords": [
+    "zod",
+    "validation",
+    "error",
+    "error-map",
+    "error-messages",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "zod": "^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "zod": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
