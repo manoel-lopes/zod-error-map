@@ -18,8 +18,7 @@ function isRawIssue(issue) {
   return (
     typeof issue === 'object' &&
     issue !== null &&
-    'code' in issue &&
-    'path' in issue
+    'code' in issue
   )
 }
 
@@ -29,7 +28,8 @@ function isRawIssue(issue) {
  * @returns {Label}
  */
 function getLabel(issue) {
-  const field = issue.path[issue.path.length - 1]
+  const path = issue.path ?? []
+  const field = path[path.length - 1]
   if (typeof field === 'string') {
     return { bare: field, quoted: `'${field}'` }
   }

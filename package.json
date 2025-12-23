@@ -12,10 +12,12 @@
     }
   },
   "files": [
-    "src"
+    "src/**/*.js",
+    "src/**/*.d.ts",
+    "!src/**/*.test.js"
   ],
   "scripts": {
-    "test": "node --test",
+    "test": "node --test 'tests/**/*.test.js'",
     "typecheck": "tsc"
   },
   "keywords": [
@@ -26,8 +28,16 @@
     "error-messages",
     "typescript"
   ],
-  "author": "",
+  "author": "Manoel Lopes",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manoel-lopes/zod-error-map.git"
+  },
+  "bugs": {
+    "url": "https://github.com/manoel-lopes/zod-error-map/issues"
+  },
+  "homepage": "https://github.com/manoel-lopes/zod-error-map#readme",
   "peerDependencies": {
     "zod": "^3.0.0 || ^4.0.0"
   },
