@@ -1,9 +1,9 @@
-import { ErrorCode, FormatType } from './error-codes.js'
+import { ErrorCode, FormatType } from '../../core/constants/index.js'
 
 /**
- * @typedef {import('./types.js').RawIssue} RawIssue
- * @typedef {import('./types.js').Label} Label
- * @typedef {import('./types.js').MessageBuilder} MessageBuilder
+ * @typedef {import('../../core/types/index.js').RawIssue} RawIssue
+ * @typedef {import('../../core/types/index.js').Label} Label
+ * @typedef {import('../../core/types/index.js').MessageBuilder} MessageBuilder
  */
 
 /**

@@ -1,8 +1,9 @@
-export { ErrorCode, FormatType } from './core/index.js'
-
 export {
   createErrorMapper,
   defaultErrorMapper,
+} from './mappers/index.js'
+
+export {
   getInputDescription,
   defaultFormatMessages,
   buildInvalidTypeMessage,
@@ -11,9 +12,4 @@ export {
   createFormatMessageBuilder,
   createCustomMessageBuilder,
   createDefaultBuilders,
-} from './domain/index.js'
-
-export {
-  setZodErrorMap,
-  createZodErrorMap,
-} from './adapters/index.js'
+} from './builders/index.js'

@@ -1,10 +1,10 @@
-import { createDefaultBuilders } from './message-builders.js'
+import { createDefaultBuilders } from '../builders/index.js'
 
 /**
- * @typedef {import('./types.js').RawIssue} RawIssue
- * @typedef {import('./types.js').Label} Label
- * @typedef {import('./types.js').MessageBuilder} MessageBuilder
- * @typedef {import('./types.js').ErrorMapConfig} ErrorMapConfig
+ * @typedef {import('../../core/types/index.js').RawIssue} RawIssue
+ * @typedef {import('../../core/types/index.js').Label} Label
+ * @typedef {import('../../core/types/index.js').MessageBuilder} MessageBuilder
+ * @typedef {import('../../core/types/index.js').ErrorMapConfig} ErrorMapConfig
  */
 
 const DEFAULT_ERROR = 'Invalid input'

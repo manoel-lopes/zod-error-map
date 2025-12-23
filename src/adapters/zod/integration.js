@@ -1,8 +1,8 @@
 /**
- * @typedef {import('./types.js').ErrorMapConfig} ErrorMapConfig
+ * @typedef {import('../../core/types/index.js').ErrorMapConfig} ErrorMapConfig
  */
 
-import { createErrorMapper } from './error-mapper.js'
+import { createErrorMapper } from '../../domain/mappers/index.js'
 
 /**
  * Sets the global Zod error map using z.config()

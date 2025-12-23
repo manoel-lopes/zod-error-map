@@ -1,6 +1,6 @@
 {
   "name": "zod-error-map",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Type-safe, customizable error message mapping for Zod validation",
   "type": "module",
   "main": "src/index.js",
