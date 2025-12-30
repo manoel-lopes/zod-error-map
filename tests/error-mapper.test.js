@@ -118,7 +118,7 @@ describe('createFormatMessageBuilder', () => {
     const builder = createFormatMessageBuilder()
     const issue = { code: 'invalid_format', path: ['website'], format: 'url' }
     const label = { bare: 'website', quoted: "'website'" }
-    assert.equal(builder(issue, label), "The 'website' must be a valid URL")
+    assert.equal(builder(issue, label), "The 'website' is invalid")
   })
 
   it('returns generic format message for unknown formats', () => {

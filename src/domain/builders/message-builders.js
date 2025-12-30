@@ -25,7 +25,7 @@ export function getInputDescription(input) {
 export const defaultFormatMessages = {
   [FormatType.EMAIL]: (label) => `The ${label.quoted} must be a valid email address`,
   [FormatType.UUID]: (label) => `The ${label.quoted} must be a valid UUID`,
-  [FormatType.URL]: (label) => `The ${label.quoted} must be a valid URL`,
+  [FormatType.URL]: (label) => `The ${label.quoted} is invalid`,
   [FormatType.REGEX]: (label) => `The ${label.quoted} has an invalid format`,
   [FormatType.CUID]: (label) => `The ${label.quoted} must be a valid CUID`,
   [FormatType.CUID2]: (label) => `The ${label.quoted} must be a valid CUID2`,
